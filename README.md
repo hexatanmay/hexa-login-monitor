@@ -1,6 +1,5 @@
-# hexa-login-monitor
+# hexa-login-monitor 🔐
 A Python-PowerShell integrated tool to monitor and capture failed login attempts. Logs details and snapshots are stored locally for security monitoring.
-# Login Attempt Logger 🔐
 
 A **Python-PowerShell integrated security tool** to monitor and capture failed login attempts on a system.  
 The script logs critical details (username, timestamp, attempt status) and **captures a snapshot** at the moment of failure, storing everything locally for review.  
