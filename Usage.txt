@@ -1,0 +1,50 @@
+=============================
+  Security Log Capture Tool
+=============================
+
+This guide explains how to use the tool, where to run it, and where the logs are stored.
+
+------------------------------------
+1. What this tool does
+------------------------------------
+- Detects failed login attempts on Windows.
+- Takes a snapshot whenever a failed login happens.
+- Collects logs and stores them in the "security_logs" folder.
+
+------------------------------------
+2. What files are included
+------------------------------------
+- log.ps1        → PowerShell script that runs the Python script.
+- your_script.py → Python script that takes snapshots and saves logs.
+- security_logs/ → Folder where captured logs and snapshots are saved.
+
+------------------------------------
+3. How to set it up
+------------------------------------
+Step 1: Install Python (from https://www.python.org/downloads/).
+Step 2: Install required libraries (see README.md).
+Step 3: Keep all files in one folder.
+
+------------------------------------
+4. How to run
+------------------------------------
+Option A: Run manually
+  - Double-click "log.ps1" OR run the Python script directly.
+
+Option B: Run automatically (recommended)
+  - Use Windows Task Scheduler:
+    * Create a new task.
+    * Set trigger: "On failed login attempt" (Event ID 4625).
+    * Set action: Run "log.ps1".
+  - Now, the script will run automatically whenever someone fails to log in.
+
+------------------------------------
+5. Where to find logs
+------------------------------------
+- All logs and snapshots are saved in:
+  security_logs/
+
+------------------------------------
+6. Screenshots
+------------------------------------
+You can refer to the screenshots for better clarity.
