@@ -47,4 +47,4 @@ Option B: Run automatically (recommended)
 ------------------------------------
 6. Screenshots
 ------------------------------------
-You can refer to the screenshots for better clarity.
+You can refer to the screenshots for option B for better clarity.
